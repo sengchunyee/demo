@@ -3,6 +3,7 @@ import { Action } from "./actions";
 const initialState = {
   movies: [],
   wishlist: [],
+  user: [],
 };
 
 export default function (state = initialState, action) {

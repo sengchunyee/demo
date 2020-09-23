@@ -1,4 +1,6 @@
 import axios from "axios";
+import { persistStore, persistReducer } from "redux-persist";
+import AsyncStorage from "@react-native-community/async-storage";
 
 export const Action = {
   GET_MOVIES: "fetch_movies",
