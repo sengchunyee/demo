@@ -1,9 +1,15 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 import NavBar from "./src/component/NavBar";
+import { store } from "./src/redux/store";
+import { Provider } from "react-redux";
 
 export default function App() {
-  return <NavBar />;
+  return (
+    <Provider store={store}>
+      <NavBar />
+    </Provider>
+  );
 }
 
 const styles = StyleSheet.create({
